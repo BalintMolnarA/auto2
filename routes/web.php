@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Adatok;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,3 +17,15 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+Route::get('/tulajdon', function () {
+    return view('tulajdon');
+});
+
+Route::get('/baleset', function () {
+    return view('baleset');
+});
+
+Route::get('/adatok',[adatok::class,"bekuldes"]);
+Route::post('/adatok',[adatok::class,"rogzites"]);
