@@ -32,7 +32,7 @@
                 @enderror
                 </div>
                 <div class="my-3">
-                <label for="tuljkezd">Tulajdonjog kezdete:</label> <input type="text" name="tuljkezd" id="tip" class="form-control text-center"value="{{old('tuljkezd')}}">
+                <label for="tuljkezd">Tulajdonjog kezdete:</label> <input type="date" name="tuljkezd" id="tip" class="form-control text-center"value="{{old('tuljkezd')}}">
                 @error('tuljkezd')
                 <div class="alert alert-danger">
                     {{$message}}
@@ -40,7 +40,7 @@
                  @enderror
                 </div>
                 <div class="my-3">
-                <label for="tuljv">Tulajdonjog vége:</label><input type="tuljv" name="tuljv" id="tuljv" class="form-control text-center"value="{{old('tuljv')}}">
+                <label for="tuljv">Tulajdonjog vége:</label><input type="date" name="tuljv" id="tuljv" class="form-control text-center"value="{{old('tuljv')}}">
                     
                 @error('tuljv')
                 <div class="alert alert-danger">

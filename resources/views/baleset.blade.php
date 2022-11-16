@@ -24,7 +24,7 @@
                 @csrf
                 <h1 >Adatok:</h1>
                 <div class="my-3">
-                <label for="idop">Baleset időpontja:</label><input type="text" name="idop" id="idop" class="form-control text-center " value="{{old('idop')}}" >
+                <label for="idop">Baleset időpontja:</label><input type="date" name="idop" id="idop" class="form-control text-center " value="{{old('idop')}}" >
                 @error('idop')
                     <div class="alert alert-danger">
                         {{$message}}
